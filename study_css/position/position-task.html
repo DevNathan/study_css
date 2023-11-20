@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 실습</title>
+    <style>
+        div.img {
+            width: 220px;
+            height: 315px;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .title {
+            position: inherit;
+            text-align: center;
+            color: red;
+            font-size: 16px;
+        }
+
+        .sword {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-34%, -14%) rotate(132deg);
+
+            transform-origin: center;
+            /* 이미지의 회전 중심을 정중앙으로 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <div class="title">
+            <p>코딩 잘하라고 칼들고 협박함</p>
+        </div>
+        <div class="sword">
+            <img src="pngegg.png" alt="칼 이미지" width="200px" height="50px">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,811 @@
+html,
+body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    outline: 0;
+}
+
+div {
+    display: block;
+}
+
+a,
+input,
+button,
+div,
+li,
+textarea,
+form,
+label,
+select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+textarea,
+button,
+input,
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+button span {
+    position: relative;
+}
+
+address,
+caption,
+em,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    width: 100%;
+    background: #fff;
+}
+
+.wrapper.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+header {
+    background: #f7323f;
+    position: relative;
+    z-index: 210;
+}
+
+header section {
+    height: 44px;
+    background: #fff;
+    width: 100%;
+}
+
+header section h1 {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    width: 95px;
+    height: 20px;
+    margin: 0 0 0 -47.5px;
+    background: url(//image.goodchoice.kr/images/web_v3/h1_logo_mo.png) 0 0 no-repeat;
+    background-size: 95px auto;
+}
+
+header section h1 a {
+    display: block;
+    text-indent: -9999px;
+}
+
+header section .btn-menu {
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_menu.png) 50% 50% no-repeat;
+    background-size: 24px auto;
+    text-indent: -9999px;
+}
+
+header section .btn-srch {
+    position: absolute;
+    top: 2px;
+    right: 8px !important;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_srch.png) 50% 50% no-repeat;
+    background-size: 24px auto;
+    text-indent: -9999px;
+}
+
+.header-nav {
+    display: none;
+}
+
+.sub-top {
+    margin: 4px 16px 0 16px;
+    border-radius: 4px;
+    background: #eee;
+}
+
+.sub-top h2 {
+    display: none;
+}
+
+.content-container {
+    overflow: hidden;
+    min-height: 390px;
+}
+
+.content-container nav {
+    display: none;
+}
+
+.content-container nav ul li {
+    margin-bottom: 26px;
+}
+
+.content-container nav ul li a {
+    display: block;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.content-container nav ul li a.active {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(230, 28, 81);
+}
+
+.faq {
+    background: #fff;
+}
+
+.mobile-top {
+    position: relative;
+    height: 44px;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.mobile-top .top-btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+    padding: 0 16px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.faq .top-link {
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgb(235, 235, 235);
+}
+
+
+.faq .top-link li {
+    float: left;
+    width: 33%;
+    background: #fff;
+}
+
+.faq .top-link li a {
+    display: block;
+    padding: 16px 0 15px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+
+.faq .top-link li a.on {
+    background: #f2114c;
+    color: #fff;
+}
+
+.faq .top-link li:nth-child(3n+ 2) {
+    width: 34%;
+}
+
+.faq-list {
+    background: #fff;
+}
+
+.faq-list .title {
+    display: block;
+    padding: 23px 0 4px 0;
+    font-size: 18px;
+    line-height: normal !important;
+}
+
+.faq-list .list li .ans {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.04);
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.faq-list .list li {
+    border-top: 1px solid #e6e6e6;
+}
+
+.faq-list .list li:first-child {
+    border-top: none;
+}
+
+.faq-list .list li .link {
+    position: relative;
+    height: 56px;
+    font-size: 15px;
+    line-height: 56px;
+}
+
+.faq-list .list li .link span {
+    display: block;
+    overflow: hidden;
+    height: 56px;
+    margin-right: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.faq-list .list li .link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-top: -4px;
+    background: #fff url(//image.goodchoice.kr/images/web_v3/ico_arr_3.png) 0 0 no-repeat;
+    background-size: 12px auto;
+}
+
+footer {
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    padding: 23px 16px 16px 16px !important;
+    background: rgb(245, 245, 245);
+    font-size: 10px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+footer .link li {
+    float: left;
+    margin-bottom: 13px;
+    line-height: normal;
+}
+
+footer .link li:nth-of-type(3) a {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer .link li span {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+footer .link li button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 10px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+footer a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+footer .link li:nth-child(5),
+footer .link li:nth-child(8) {
+    clear: both;
+}
+
+footer p {
+    clear: both;
+    padding: 27px 0 27px 0;
+}
+
+footer p b,
+footer p span {
+    display: inline-block;
+}
+
+footer address {
+    display: inline-block;
+}
+
+footer address .order {
+    display: block;
+    padding: 6px 0;
+}
+
+footer .ico {
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px 0 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+footer .ico a {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.icon-icn_login_facebook:before {
+    content: "\e90b";
+}
+
+.icon-ic_blog:before {
+    content: "\e908";
+}
+
+.icon-ic_blog:before {
+    content: "\e908";
+}
+
+footer .ico span {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    text-indent: -9999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 72px;
+        transition: 0.4s;
+    }
+
+    header.scroll {
+        background: #fff;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    header section {
+        position: relative;
+        width: 1024px;
+        height: 64px;
+        background: none;
+        margin: 0 auto;
+    }
+
+    header section h1 {
+        position: absolute;
+        top: 26px;
+        left: 31px;
+        width: 96px;
+        height: 20px;
+        margin: 0;
+        background: url(//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png) 0 0 no-repeat;
+        background-size: 96px auto;
+    }
+
+    header section .btn-menu {
+        display: none;
+    }
+
+    header section .btn-srch {
+        position: absolute;
+        border: none;
+        text-indent: -9999px;
+        top: 22px;
+        right: 396px;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+        background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50% 50% no-repeat;
+        background-size: 24px auto;
+    }
+
+    .header-nav {
+        width: auto;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pc .header-nav {
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        right: 31px;
+    }
+
+    .header-nav li {
+        display: inline-block;
+        position: relative;
+        min-width: 53px;
+        min-height: 35px;
+        margin-left: 30px;
+        vertical-align: top;
+    }
+
+    .header-nav li a {
+        display: inline-block;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0;
+    }
+
+    .header-nav li button {
+        border: none;
+        padding: 0;
+        background: none;
+        font-size: 18px;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0;
+    }
+
+    .header-nav .more-list {
+        top: 30px;
+        left: -65px;
+        width: 184px;
+    }
+
+    .sub-top-wraper {
+        height: 211px;
+        background: #f7323f;
+    }
+
+    .sub-top {
+        width: 1024px;
+        height: 211px;
+        margin: 0 auto;
+        padding-top: 72px;
+        border-radius: 0;
+        background: none;
+        position: relative;
+    }
+
+    .sub-top h2 {
+        display: block;
+        margin: 21px 0 0 31px;
+        font-size: 38px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        color: #fff;
+    }
+
+    .content-container {
+        padding-top: 54px;
+        background: #fff;
+        width: 1024px !important;
+        margin: 0 auto 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .content-container nav {
+        display: block;
+        float: left;
+        width: 238px;
+        padding-left: 31px;
+    }
+
+    .content {
+        float: right;
+        width: 724px;
+        margin-right: 31px;
+    }
+
+    .mobile-top {
+        display: none;
+    }
+
+    .faq .top-link {
+        overflow: visible;
+        height: 80px;
+        border-top: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        background: #fff;
+    }
+
+    .faq .top-link li {
+        width: auto;
+        margin-right: 18px;
+        background: none;
+        letter-spacing: -1px;
+    }
+
+    .faq .top-link li:nth-child(3n+ 2) {
+        width: auto;
+    }
+
+    .faq .top-link li a {
+        display: block;
+        position: relative;
+        height: 39px;
+        padding: 0;
+        border: none;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.87);
+        text-align: center;
+    }
+
+    .faq .top-link li a.on {
+        background: #fff;
+        font-weight: bold;
+        color: rgb(242, 17, 76);
+    }
+
+    .faq-list {
+        clear: both;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .faq-list .title {
+        display: none;
+    }
+
+    .faq-list .list li:first-child {
+        border-top: none;
+    }
+
+    .faq-list .list li {
+        border-top: none;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .faq-list .list li .link {
+        position: relative;
+        height: auto;
+        padding: 34px 0;
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .faq-list .list li .link span {
+        display: block;
+        overflow: hidden;
+        height: auto;
+        margin-right: 30px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    footer {
+        overflow: hidden;
+        clear: both;
+        position: relative;
+        margin-top: 120px;
+        padding: 63px 31px 40px 31px !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        background: rgb(245, 245, 245);
+        font-size: 13px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.38);
+    }
+
+    footer a {
+        color: rgba(0, 0, 0, 0.38);
+    }
+
+    .footer-containment {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    footer .link {
+        overflow: hidden;
+    }
+
+    footer .link li {
+        float: left;
+        margin-bottom: 5px;
+        line-height: normal;
+    }
+
+    footer .link li:nth-child(5),
+    footer .link li:nth-child(8) {
+        clear: none;
+    }
+
+    footer .link li a {
+        display: inline-block;
+    }
+
+    footer .link li:nth-of-type(3) a {
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    footer .link li span {
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        width: 24px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    footer .link li:nth-child(5) span {
+        display: none;
+    }
+
+    footer .link li:nth-child(6) {
+        clear: both;
+    }
+
+    footer .link li button {
+        font-size: 13px;
+    }
+
+    footer p {
+        clear: both;
+        padding: 37px 0 24px 0;
+    }
+
+    footer p b {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    footer address {
+        line-height: 22px;
+    }
+
+    footer address span {
+        display: block;
+        padding-bottom: 7px;
+    }
+
+    footer .ico {
+        margin: 26px 0 0 0;
+    }
+
+    footer .ico a {
+        margin-right: 25px;
+        font-size: 30px;
+    }
+}

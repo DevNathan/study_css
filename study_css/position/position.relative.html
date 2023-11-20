@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative</title>
+  <style>
+    div {
+      position: relative;
+      font-size: 2rem;
+      width: 400px;
+      height: 50px;
+    }
+    div:nth-child(1) {
+      background-color: brown;
+      color: white;
+      z-index: 1;
+    }
+    div:nth-child(2) {
+      top: -50px;
+      background-color: yellow;
+      color: black;
+      z-index: 2;
+    }
+    div:nth-child(3) {
+      top: -100px;
+      background-color: pink;
+      color: black;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div>코코아</div>
+  <div>커피</div>
+  <div>에이드</div>
+</body>
+</html>

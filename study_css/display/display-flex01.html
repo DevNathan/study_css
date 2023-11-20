@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    #wrap {
+      width: 350px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    div.container {
+      display: flex;
+      /* 수직 정렬 */
+      align-items: center;
+      /* 수평 정렬 */
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      /* flex에서는 text-align이 적용되지 않는다. */
+      /* text-align: center; */
+      background: pink;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">DIV1</div>
+    <div class="container">DIV2</div>
+    <div class="container">DIV3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속 스타일</title>
+    <style>
+        #container strong {
+            color: red;
+        }
+
+        #wrap {
+            color: blue;
+            border: 2px dotted orange;
+        }
+
+        #wrap p {
+            border: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <strong>상속 선택자</strong>
+    <div id="container">
+        <strong>태그 안에 태그가 있을 때 감싸고 있는 태그가 부모 태그이다.</strong>
+    </div>
+
+    <div id="wrap">
+        <p>태그 안에 있는 태그는 자식 태그이다.</p>
+    </div>
+</body>
+
+</html>

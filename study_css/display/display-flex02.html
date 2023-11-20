@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .wrap {
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 1px solid black;
+            background-color: aqua;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flex로 3행 4열만들기 -->
+    <div style="justify-content: center;">
+        <div class="wrap">
+            <div class="container">div1</div>
+            <div class="container">div1</div>
+            <div class="container">div1</div>
+            <div class="container">div1</div>
+        </div>
+        <div class="wrap">
+            <div class="container">div2</div>
+            <div class="container">div2</div>
+            <div class="container">div2</div>
+            <div class="container">div2</div>
+        </div>
+        <div class="wrap">
+            <div class="container">div3</div>
+            <div class="container">div3</div>
+            <div class="container">div3</div>
+            <div class="container">div3</div>
+        </div>
+    </div>
+</body>
+
+</html>

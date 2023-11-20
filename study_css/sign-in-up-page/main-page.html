@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in-up</title>
+    <link rel="stylesheet" href="main-page.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="div-for-movement">
+            <div class="container">
+                <div class="sign-up-container">
+                    <form>
+                        <h1>Create Account</h1>
+                        <div class="social-links">
+                            <div>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <span>or user your Email for registration</span>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button id="signUpInCreateAccount" class="form_btn">Sign Up</button>
+                    </form>
+                </div>
+                <div class="sign-in-container">
+                    <form>
+                        <h1>Sign In</h1>
+                        <div class="social-links">
+                            <div>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <span>or use your account</span>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button class="form_btn">Sign In</button>
+                        <a id="showAccountFinderBtn">Forgot your password?<br>Click here!</a>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay-left">
+                        <h1>Welcome Back</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button id="signIn" class="overlay_btn">Sign In</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1>Hello, Friend</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button id="signUp" class="overlay_btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-container">
+                <div class="hidden-account-finder">
+                    <form>
+                        <h2>Find your password</h2>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <button class="form_btn">Find Password</button>
+                        <button class="mobile-return-btn" id="mobileReturnBtn"></button>
+                    </form>
+                </div>
+                <div class="hidden-email-certification">
+                    <form>
+                        <h2>Certify your<br>E-mail Account</h2>
+                        <span>check your E-mail that you insert in previous form</span>
+                        <input type="text" placeholder="Certification Number">
+                        <button class="form_btn">Certify</button>
+                    </form>
+                </div>
+            </div>
+            <div class="left-side-bar-container">
+                <div class="left-side-bar-header">
+                    <h1>The journies we have walked with all of you!</h1>
+                </div>
+                <div class="left-side-bar-imgs" id="leftSideBarImgs">
+                    <img src="imgs/img1.jpg" alt="">
+                    <img src="imgs/img2.jpg" alt="">
+                    <img src="imgs/img3.jpeg" alt="">
+                    <img src="imgs/img4.jpg" alt="">
+                    <img src="imgs/img5.jpeg" alt="">
+                    <img src="imgs/img6.jpg" alt="">
+                    <img src="imgs/img7.jpg" alt="">
+                </div>
+                <div class="left-side-bar-tail"></div>
+            </div>
+            <div class="right-side-bar-container">
+                <div class="right-side-bar-header">
+                    <h1>We would like to enjoy your best moment together!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main-page.js" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

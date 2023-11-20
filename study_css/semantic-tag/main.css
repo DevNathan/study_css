@@ -1,0 +1,42 @@
+body {
+    width: 440px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 0;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+footer {
+    width: 400px;
+    margin: 4px;
+    padding: 4px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+aside {
+    float: left;
+    width: 84px;
+    height: 100px;
+}
+
+main {
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+article {
+    width: 292px;
+    background-color: #efefef;
+}
+
+footer {
+    clear: left;
+}

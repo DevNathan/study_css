@@ -1,0 +1,117 @@
+<!-- 
+    font-size(폰트크기, 글자크기)
+
+    1. 절대적인 크기(px)
+        텍스트의 크기를 명시된 크기 그대로 설정하고자 할 때 사용.
+        절대적 크기로 설정된 텍스트는 모든 브라우저에서 같은 크기로 표현된다.
+
+    2. 상대적인 크기
+        텍스트를 둘러싸고 있는 HTML 요소들의 크기에 따라 텍스트의 크기도 같이 변하는 방식이다.
+        또한, 사용자가 웹 브라우저를 통해 텍스트의 크기를 직접 변경할 수도 있다.
+
+        ※ 크기 단위(기본 크기: 16px)
+        - 백분율 단위(%)
+            기본 크기 100%로 놓고, 그에 대한 상대적인 크기 설정
+
+        - 배수 단위(em)
+            부모 요소에 중첩이되어 1.0은 100%, 1.5 150%로 상대적인 크기
+
+        - 배수 단위(rem)
+            부모에 상관없이 HTML 기본 크기에 적용되어 상대적인 크기 설정
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>폰트 크기</title>
+     <style>
+         body, p {text-align: center;}
+         body {
+             font-size: 1.5em; /* 24px */
+             color: green;
+         }
+ 
+         .body-p1 {
+             font-size: 1.5em; /* 36px */
+         }
+ 
+         .body-p2 {
+             font-size: 1.5rem; /* 24px */
+         }
+ 
+         div.div1 {
+             font-size: 1.5em; /* 36px */
+         }
+ 
+         .div1-p1 {
+             font-size: 1.5em; /* 54px */
+         }
+ 
+         .div1-p2 {
+             font-size: 2rem; /* 32px */
+         }
+ 
+         div.div2 {
+             font-size: 1.5em; /* 54px */
+         }
+ 
+         .div2-p1 {
+             font-size: 1.5em; /* 81px */
+         }
+ 
+         .div2-p2 {
+             font-size: 0.5em; /* 27px */
+         }
+ 
+         div.div3 {
+             font-size: 30px;
+             color: blue;
+         }
+ 
+         .div3-p1 {
+             font-size: 1.5em; /* 45px */
+         }
+ 
+         .div3-p2 {
+             font-size: 200%; /* 60px */
+         }
+ 
+         div.div4 {
+             font-size: 2rem; /* 32px */
+         }
+ 
+         .div4-p1 {
+             font-size: 2rem; /* 32px; */
+         }
+ 
+         .div4-p2 {
+             font-size: 3.5rem; /* 56px */
+         }
+     </style>
+ </head>
+ <body>
+     Hi, CSS!
+     <p class="body-p1">Hi, CSS!</p>
+     <p class="body-p2">Hi, CSS!</p>
+     <div class="div1">
+         <p class="div1-p1">Hi, CSS!</p>
+         <p class="div1-p2">Hi, CSS!</p>
+         <div class="div2">
+             <p class="div2-p1">Hi, CSS!</p>
+             <p class="div2-p2">Hi, CSS!</p>
+             <div class="div3">
+                 <p class="div3-p1">Hi, CSS!</p>
+                 <p class="div3-p2">Hi, CSS!</p>
+             </div>
+             <div class="div4">
+                 <p class="div4-p1">Hi, CSS!</p>
+                 <p class="div4-p2">Hi, CSS!</p>
+             </div>
+         </div>
+     </div>
+ </body>
+ </html>
